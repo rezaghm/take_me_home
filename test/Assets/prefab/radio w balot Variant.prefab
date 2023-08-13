@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2306687973526108119
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4678177913103976281, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_Name
+      value: radio w balot Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763332669546460326, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: intile
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763332669546460326, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: instone
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763332669546460326, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: balot_in_scene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763332669546460326, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: value_of_the_cuts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744641849055974173, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744641849055974173, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744641849055974173, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3525915
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744641849055974173, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.859436
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744641849055974173, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744641849055974173, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744641849055974173, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744641849055974173, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744641849055974173, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744641849055974173, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744641849055974173, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f5156deb3d03704ba3707a70dc0659b, type: 3}
