@@ -26,7 +26,7 @@ public class snowman_movement : MonoBehaviour
     }
     private void OnMouseDrag() 
     {
-        if (enter_in_radio.enter_tile == true )
+        if (enter_in_radio.enter_tile == true && enter_in_radio.stop_drawing == false )
         {
             drawcontroll.UpdateLine();
             
@@ -59,7 +59,8 @@ public class snowman_movement : MonoBehaviour
         
         
         enter_in_radio.drawing = false;
-
+        enter_in_radio.stop_drawing = false;
+        enter_in_radio.stop_drawing_count = true;
 
 
 

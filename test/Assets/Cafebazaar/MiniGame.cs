@@ -13,7 +13,7 @@ namespace Cafebazaar
 
     public static class MiniGame
     {
-        private const string SCORE_URL = "https://minigames-api.cafebazaar.org/score";
+        private const string SCORE_URL = "https://minigames-api.cafebazaar.org/score/";
         private static GameData gameData;
 
         #if UNITY_WEBGL && !UNITY_EDITOR
@@ -47,11 +47,13 @@ namespace Cafebazaar
 
             UnityWebRequest request = new UnityWebRequest(url: SCORE_URL, method: "POST");
             request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("Access-Control-Allow-Origin", "*");
+            
             request.uploadHandler = (UploadHandler)new UploadHandlerRaw(
                 data: Encoding.UTF8.GetBytes(
-                    "{\"game_slug\":\"" + gameData.Slug + 
-                    "\", \"uid\":\"" + gameData.Uid + 
-                    "\", \"score:\":" + score + 
+                    "{\"game_slug\":\"" + gameData.Slug.Replace("\"", "") + 
+                    "\", \"uid\":\"" + gameData.Uid.Replace("\"", "") + 
+                    "\", \"score\":" + score + 
                     "}"
                 )
             );

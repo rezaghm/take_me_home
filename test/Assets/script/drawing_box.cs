@@ -6,6 +6,7 @@ public class drawing_box : MonoBehaviour
 {
     private radio enter_in_radio;
     public BoxCollider2D boxCollider;
+    private bool stop_drawing_count = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,13 +27,19 @@ public class drawing_box : MonoBehaviour
     }
     public void OnMouseEnter()
     {
-        enter_in_radio.stop_drawing = false;
+        if(stop_drawing_count == true)
+        {
+            enter_in_radio.stop_drawing = false;
+            stop_drawing_count = false;
+        }
+        
         enter_in_radio.dont_cut = true;
 
     }
     public void OnMouseExit()
     {
         enter_in_radio.dont_cut=false;
+        enter_in_radio.stop_drawing=true;
         
         
     }

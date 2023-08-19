@@ -1957,7 +1957,7 @@ PrefabInstance:
       objectReference: {fileID: 1045241787}
     - target: {fileID: 9153193850685354566, guid: 619a738cab5eeaa43b3908d3fa4cd240, type: 3}
       propertyPath: level
-      value: level1
+      value: level11
       objectReference: {fileID: 0}
     - target: {fileID: 9153193850685354566, guid: 619a738cab5eeaa43b3908d3fa4cd240, type: 3}
       propertyPath: star1

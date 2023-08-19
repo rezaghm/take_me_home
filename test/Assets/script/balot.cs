@@ -6,6 +6,7 @@ public class balot : MonoBehaviour
 {
     private radio enter_in_radio;
     public SpriteRenderer balot_image;
+    private bool stop_drawing_count = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,12 @@ public class balot : MonoBehaviour
         enter_in_radio.enter_tile = true;
         enter_in_radio.draw = true;
         enter_in_radio.intile = true;
+        if (stop_drawing_count == true)
+        {
+            enter_in_radio.stop_drawing = false;
+            stop_drawing_count = false;
+        }
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

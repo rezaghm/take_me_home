@@ -29,7 +29,7 @@ public class tile_movment : MonoBehaviour
     public bool add_one;
     private logic_script enter_in_logic_script;
     public bool add_score;
-
+    
 
     public float destance_from_mouse = 2;
 
@@ -126,7 +126,7 @@ public class tile_movment : MonoBehaviour
         boxcol.isTrigger = true;
         capsulecol.isTrigger = true;
         add_one = false;
-    
+        enter_in_radio.stop_drawing_count = true;
     
     }
     public void OnTriggerEnter2D(Collider2D collision)
@@ -171,7 +171,12 @@ public class tile_movment : MonoBehaviour
         enter_in_radio.draw = true;
         enter_in_radio.enter_tile = true;
         enter_in_radio.intile = true;
-        enter_in_radio.stop_drawing = false;
+        if(enter_in_radio.stop_drawing_count== true)
+        {
+            enter_in_radio.stop_drawing = false;
+            enter_in_radio.stop_drawing_count = false;
+        }
+        
 
     }
     public void OnMouseExit()

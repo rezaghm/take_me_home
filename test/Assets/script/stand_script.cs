@@ -5,6 +5,7 @@ using UnityEngine;
 public class stand_script : MonoBehaviour
 {
     private radio enter_in_radio;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,11 +21,15 @@ public class stand_script : MonoBehaviour
     public void OnMouseEnter()
     {
         enter_in_radio.enter_tile = true;
-        enter_in_radio.stop_drawing = false;
-       
+        enter_in_radio.draw = true;
+        enter_in_radio.intile = true;
+        
+
     }
     public void OnMouseExit()
     {
-      enter_in_radio.enter_tile = false;
+        enter_in_radio.draw = false;
+        enter_in_radio.enter_tile = false;
+
     }
 }

@@ -7,13 +7,13 @@ public class drawing_whith_mous : MonoBehaviour
 {
     public LineRenderer line;
     private Vector3 previousposition;
-
+    
     [SerializeField]
     private float mindistance = 0.1f;
     [SerializeField,Range(0.1f,2f)]
     private float width;
     private radio enter_in_radio;
-
+    private List<Vector2> points = new List<Vector2>();
 
 
     // Start is called before the first frame update
@@ -21,9 +21,11 @@ public class drawing_whith_mous : MonoBehaviour
     {
         enter_in_radio = GameObject.FindGameObjectWithTag("radio").GetComponent<radio>();
         line = GetComponent<LineRenderer>();
+        
         line.positionCount = 1;
         previousposition = transform.position;
         line.startWidth = line.endWidth = width;
+        
     }
 
     public void StartLine(Vector2 position)
@@ -47,8 +49,11 @@ public class drawing_whith_mous : MonoBehaviour
                 }
                 else
                 {
+                    
                     line.positionCount++;
                     line.SetPosition(line.positionCount - 1, currentposition);
+
+                    
                 }
                
                 previousposition = currentposition;
@@ -67,6 +72,7 @@ public class drawing_whith_mous : MonoBehaviour
         if (enter_in_radio.stop_drawing == true)
         {
             stop_drawing();
+            
         }
     }
     public void OnMouseDown()
@@ -76,8 +82,8 @@ public class drawing_whith_mous : MonoBehaviour
     private void OnMouseUp()
     {
 
-
-
+        
+        
         stop_drawing();
         
         enter_in_radio.stop_drawing = false;
@@ -91,6 +97,9 @@ public class drawing_whith_mous : MonoBehaviour
         line.positionCount = points.Length;
         line.SetPositions(points);
     }
-  
    
+        
+
+
+
 }

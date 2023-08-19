@@ -22,6 +22,7 @@ public class home : MonoBehaviour
         enter_in_radio.enter_tile = true;
         enter_in_radio.intile = true;
         enter_in_radio.stop_drawing = false;
+        enter_in_radio.draw = true;
     }
     public void OnMouseExit()
     {

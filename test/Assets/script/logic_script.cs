@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using Cafebazaar;
 public class logic_script : MonoBehaviour
 {
     private radio enter_in_radio;
@@ -22,13 +22,14 @@ public class logic_script : MonoBehaviour
     public string level;
     public string saved_level;
     public string game_played;
-
+    
 
     private void Start()
     {
         game_played = PlayerPrefs.GetString("game_played");
         enter_in_radio = GameObject.FindGameObjectWithTag("radio").GetComponent<radio>();
         sorce_need_for_3star += sorce;
+        MiniGame.Initialize();
     }
      public void addscore()
     {
@@ -45,7 +46,10 @@ public class logic_script : MonoBehaviour
                 endig.SetActive(true);
             }
         }
-        
+        if (sorce == 0)
+        {
+            save_score(3);
+        }
         if (sorce == sorce_need_for_3star)
         {
             save_score(3);
@@ -76,6 +80,7 @@ public class logic_script : MonoBehaviour
             if(sicle == true)
             {
                 enter_in_radio.star_count += star;
+                PlayerPrefs.SetInt("overall_star", enter_in_radio.star_count);
                 sicle = false;
             }
         }
@@ -87,6 +92,12 @@ public class logic_script : MonoBehaviour
     public void next_level()
     {
         SceneManager.LoadScene(level);
+        StartCoroutine(MiniGame.SendScore(
+
+            score: enter_in_radio.star_count,
+            onSuccess: OnSuccess,
+            onFail: OnFail
+            ));
     }
     public void menu()
     {
@@ -105,5 +116,14 @@ public class logic_script : MonoBehaviour
         {
             SceneManager.LoadScene("level1");
         }
+    }
+    private void OnSuccess()
+    {
+        Debug.Log("Request succeeded.");
+    }
+
+    private void OnFail()
+    {
+        Debug.Log("Request failed.");
     }
 }
