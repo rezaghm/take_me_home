@@ -9,6 +9,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2538374622869470037, guid: 56f3ad0165e31994b8fbb16674bea57a, type: 3}
+      propertyPath: m_PreviewTimeScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538374622869470037, guid: 56f3ad0165e31994b8fbb16674bea57a, type: 3}
       propertyPath: m_MinVertexDistance
       value: 0
       objectReference: {fileID: 0}
@@ -26,11 +30,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2538374622869470037, guid: 56f3ad0165e31994b8fbb16674bea57a, type: 3}
       propertyPath: m_Parameters.widthMultiplier
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5758676608308710711, guid: 56f3ad0165e31994b8fbb16674bea57a, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758676608308710711, guid: 56f3ad0165e31994b8fbb16674bea57a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -138,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8995658000759999769, guid: 56f3ad0165e31994b8fbb16674bea57a, type: 3}
       propertyPath: m_Name
-      value: cut Variant
+      value: cut2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

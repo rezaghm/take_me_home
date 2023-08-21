@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 7264127394496564645, guid: 8f7ca4d87656c744ab9fe55f35623964, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8512925886810373551, guid: 8f7ca4d87656c744ab9fe55f35623964, type: 3}
       propertyPath: m_Name
       value: drawing_box
@@ -198,6 +202,10 @@ PrefabInstance:
       propertyPath: capsulecol
       value: 
       objectReference: {fileID: 7076145002183987046}
+    - target: {fileID: 8293227825032998890, guid: 581461e00995d4546b5d11e9f4852664, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 2844254747699919375}
     - target: {fileID: 8293227825032998890, guid: 581461e00995d4546b5d11e9f4852664, type: 3}
       propertyPath: destance_from_mouse
       value: 2

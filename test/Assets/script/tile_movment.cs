@@ -43,7 +43,7 @@ public class tile_movment : MonoBehaviour
         enter_in_radio = GameObject.FindGameObjectWithTag("radio").GetComponent<radio>();
          instone = enter_in_radio.instone;
         
-        
+
     }
 
     // Update is called once per frame

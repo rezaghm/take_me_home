@@ -69,8 +69,9 @@ public class snowman_movement : MonoBehaviour
     {
         enter_in_radio.stop_drawing = false;
         enter_in_radio.enter_tile = true;
+        enter_in_radio.intile = true;
         enter_in_radio.insowman = true;
-        
+        enter_in_radio.draw = true;
     }
     private void OnMouseExit()
     {
